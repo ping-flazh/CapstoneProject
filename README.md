@@ -62,9 +62,9 @@ In this analysis, I ran several classification algorithm such as Decision Tree, 
 ![Model_Result](./images/Model_Result.png)
 
 The accuracy scores are pretty low (below 60) for all the algorithms, this may be due to several reasons:
-- Need more data that has more distribution, but the datasets that I found only has range from 10/1/2021 to 5/31/2022. 
-- When I look at the positive & negative sentiments that are differentiated by the up & down value (see chart above), I see in some data, value may go up even though sentiment is negative, so I wonder if averaging the sentiment results for several tweets for the same day is a good approach or I need to use a different approach.
-- In order to combine the Macro Economic data, I need to duplicate the data for the same month into daily data, this duplicate data may also affect the accuracy result.
-- I may need to play around more with GridCV parameter to see if I can improve the score.
+- The positive and negative of tweet data distribution does not look good to me, I need to look into this more to understand what the issue here.
+- When I look at the positive & negative sentiments that are differentiated by the up & down value (see chart above), I don't see the data looks good either, it may be due to the way I average the sentiment results for several tweets for the same day is not correct, I may need to look into this and use a different approach, so that I can intepret the data better in a chart.
+- In order to combine all datasets that include the Macro Economic data, I need to duplicate the Macro Economic data for the same month into daily data, this duplicate data may also affect the accuracy result.
+- I may need to fine tune and play around more with GridSearchCV parameters to see if I can improve the score.
 
-For this initial findings, I think I need to further analysis in order to figure out if the up & down of stock price affected by user sentiment and macro economics.
+For this initial findings, I think I need to do further analysis in order to figure out if the up & down of stock price is affected by user sentiment and macro economics.
