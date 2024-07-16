@@ -1,4 +1,4 @@
-# Is the up & down of stock price affected by user sentiment and macro economics?
+# Is the up & down of stock price affected by user sentiment and macro economics? Can we predict stock with this information?
 
 ## Summary 
 
